@@ -20,6 +20,9 @@ const Books = () => {
         slidesToScroll: 1
     };
 
+
+
+
     return (
         <div className="container">
             <div className='books'>

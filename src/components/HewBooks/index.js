@@ -3,7 +3,6 @@ import Climate from "../../img/Climate.png"
 import Rest from "../../img/rest.png"
 import Name from "../../img/name.png"
 import "./style.scss"
-import AboutUs from "../AboutUs";
 
 const NewBooks = () => {
     return (
@@ -39,7 +38,7 @@ const NewBooks = () => {
                 </div>
 
             </div>
-            <AboutUs/>
+            <NewBooks/>
         </>
     );
 };

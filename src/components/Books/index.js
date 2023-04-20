@@ -7,7 +7,6 @@ import markey from '../../img/markeyBook.png'
 import hevver from '../../img/hovverBook.png'
 import harry from '../../img/harryBook.png'
 import glob from '../../img/globBook.png'
-import BooksPage from "../BooksPage";
 import {Link} from "react-router-dom";
 
 const Books = () => {
@@ -16,8 +15,10 @@ const Books = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1
+            slidesToShow: 3,
+            slidesToScroll: 1
+
+
     };
 
 
@@ -65,10 +66,9 @@ const Books = () => {
                         </div>
                     </Slider>
                 </div>
-
-
             </div>
         </div>
+
     );
 };
 

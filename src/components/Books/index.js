@@ -1,9 +1,4 @@
 import React from 'react';
-
-const Books = () => {
-    return (
-        <div>
-            
 import './style.scss'
 import Slider from "react-slick"
 import sublte from '../../img/subtleBook.png'
@@ -24,6 +19,9 @@ const Books = () => {
         slidesToShow: 5,
         slidesToScroll: 1
     };
+
+
+
 
     return (
         <div className="container">

@@ -1,0 +1,37 @@
+.books {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-weight: 500;
+      font-size: 48px;
+      text-align: center;
+      color: #19272E;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      color: #818EEA;
+      margin-top: 20px;
+    }
+  }
+
+  &__anyBooks {
+    padding: 80px 0;
+
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #19272E;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      color: #19272E;
+    }
+  }
+}

@@ -10,6 +10,8 @@ import BooksPage from "./components/BooksPage";
 import Books from "./components/Books";
 
 
+import BooksPage from "./components/BooksPage";
+
 
 function App() {
     return (

@@ -1,5 +1,5 @@
+import React from "react";
 import React from 'react';
-import "./style.scss"
 import Genres from "../Genres";
 
 const BookShop = () => {

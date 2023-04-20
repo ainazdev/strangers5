@@ -9,6 +9,7 @@ import Books from "./components/Books";
 import AboutUs from "./components/AboutUs";
 import React from "react";
 import NewBooks from "./components/HewBooks";
+
 import BooksPage from "./components/BooksPage";
 
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path={"/books"} element={<Books/>}/>
                 <Route path={"/aboutUs"} element={<AboutUs/>}/>
                 <Route path={"/BooksPage"} element={<BooksPage/> } />
+
             </Routes>
             <Footer/>
         </div>

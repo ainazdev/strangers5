@@ -11,7 +11,7 @@ const Header = () => {
             <div className="container">
                 <div className="header">
                     <div className="header--title">
-                        <NavLink to={"/bookshop"}>
+                        <NavLink to={"/bookShop"}>
                             Bookshop
                         </NavLink>
                         <NavLink to={"/genres"}>
@@ -23,7 +23,7 @@ const Header = () => {
                         <NavLink to={"/books"}>
                             Books
                         </NavLink>
-                        <NavLink to={"/about"}>
+                        <NavLink to={"/aboutUs"}>
                             About Us
                         </NavLink>
 

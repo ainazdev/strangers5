@@ -29,9 +29,11 @@ const Header = () => {
 
                     </div>
                     <div className="header--search">
-
                         <BsSearch className="header--search__first"/>
+                        <NavLink to={"/DetailBooks"}>
                         <RiShoppingBagLine className="header--search__bag"/>
+
+                        </NavLink>
                     </div>
                 </div>
             </div>

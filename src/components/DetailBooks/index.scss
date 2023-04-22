@@ -1,0 +1,128 @@
+#cartTwo{
+  padding: 30px 0;
+}
+.global--wrap {
+  display: flex;
+  gap: 190px;
+}
+.poragraf {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 8px 0 40px 0;
+  }
+}
+.cart__wrapper2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+
+  span {
+    color: rgba(129, 142, 234, 1);
+  }
+}
+.cart__wrapper--wrap2 {
+  display: flex;
+  gap: 37px;
+}
+.cart__title-text2 h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.cart__title-text--icon2 {
+  position: relative;
+  display: flex;
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 87px;
+    color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+    cursor: pointer;
+    position: absolute;
+    right: -95px;
+    top: -5px;
+  }
+}
+.cart__title-text2 {
+  .byMackey {
+    font-weight: 400;
+    font-size: 14px;
+    color: #19272e;
+    opacity: 0.7;
+    margin: 16px 0 70px 0;
+  }
+}
+.cart__title-text2 p {
+  font-weight: 400;
+  font-size: 18px;
+  width: 350px;
+}
+.cart__title-text2 {
+  h4 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .dollar2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #818eea;
+    margin: 32px 0;
+  }
+}
+
+
+.select {
+  h1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #19272e;
+    margin-bottom: 64px;
+  }
+  &--acc {
+    display: flex;
+    gap: 207px;
+    h3 {
+      color: #19272e;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    summary {
+      font-weight: 400;
+      font-size: 16px;
+      color: #19272e;
+      margin-bottom: 32px;
+    }
+  }
+  .border {
+    border-bottom: 1px solid #19272e;
+    margin-bottom: 32px;
+  }
+  .total {
+    display: flex;
+    gap: 336px;
+    margin-bottom: 64px;
+  }
+  .countbtn {
+    padding: 14px 118px;
+    background: #818eea;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+.hr {
+  border: 0.1px solid #000;
+  margin: 20px 0;
+  flex-direction: column;
+  opacity: 0.10;
+  width: 560px;
+}

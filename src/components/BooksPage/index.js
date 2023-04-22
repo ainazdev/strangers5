@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss'
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {HiOutlineArrowSmDown} from "react-icons/hi";
 import Checkbox from '../../img/Checkbox Off.png'
 import sublte from '../../img/subtleBook.png'
@@ -103,7 +103,10 @@ const BooksPage = () => {
                         <p>by Rick Rubin with Neil Strauss</p>
                     </div>
                     <div className="">
-                        <img src={markey} alt=""/>
+                        <NavLink to={"/DetailPage"}>
+                            <img src={markey} alt=""/>
+                        </NavLink>
+
                         <h1>THE BOY, THE MOLE, <br/> THE FOX AND THE <br/> HORSE</h1>
                         <p>by Charlie Mackesy</p>
                     </div>

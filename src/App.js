@@ -8,9 +8,9 @@ import AboutUs from "./components/AboutUs";
 import React from "react";
 import BooksPage from "./components/BooksPage";
 import Books from "./components/Books";
-
-
-import BooksPage from "./components/BooksPage";
+import NewBooks from "./components/HewBooks";
+import DetailPage from "./components/DetailPage";
+import DetailBooks from "./components/DetailBooks";
 
 
 function App() {
@@ -20,9 +20,13 @@ function App() {
             <Routes>
                 <Route path={"/bookShop"} element={<BookShop/>}/>
                 <Route path={"/genres"} element={<Genres/>}/>
+                <Route path={"/newbooks"} element={<NewBooks/>} />
                 <Route path={"/books"} element={<Books/>}/>
                 <Route path={"/aboutUs"} element={<AboutUs/>}/>
                 <Route path={"/BooksPage"} element={<BooksPage/> } />
+                <Route path={"/detailPage"} element={<DetailPage/>}/>
+                <Route path={"/detailBooks"} element={<DetailBooks/>}/>
+
 
             </Routes>
             <Footer/>

@@ -16,7 +16,6 @@ const BookShop = () => {
 
              </div>
          </div>
-         <Genres/>
      </>
 
     );

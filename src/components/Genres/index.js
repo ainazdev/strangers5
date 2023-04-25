@@ -6,7 +6,6 @@ import Book3 from '../../img/book3.svg'
 import Book4 from '../../img/book4.svg'
 import Book5 from '../../img/book5.svg'
 import Book6 from '../../img/book6.svg'
-import NewBooks from "../HewBooks";
 
 const Genres = () => {
     return (
@@ -60,7 +59,6 @@ const Genres = () => {
                 </div>
 
             </div>
-            <NewBooks/>
 
         </>
     );

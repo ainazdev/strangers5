@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './style.scss'
 import Slider from "react-slick"
 import sublte from '../../img/subtleBook.png'
@@ -7,9 +7,37 @@ import markey from '../../img/markeyBook.png'
 import hevver from '../../img/hovverBook.png'
 import harry from '../../img/harryBook.png'
 import glob from '../../img/globBook.png'
+// import sublte from '../../img/subtleBook.png'
+// import rules from '../../img/rulesBook.png'
+// import markey from '../../img/markeyBook.png'
+// import hevver from '../../img/hovverBook.png'
+// import harry from '../../img/harryBook.png'
+// import glob from '../../img/globBook.png'
 import {Link} from "react-router-dom";
+import axios from "axios";
+import {json} from "react-router";
+
+// https://www.googleapis.com/books/v1/volumes?q=isbn:0735619670
 
 const Books = () => {
+
+    const [books, setBooks] = useState([])
+
+    const getBooks = async () => {
+        try {
+            const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=code+complete`)
+            const {data} = await response
+            setBooks(data.items)
+            // console.log(data)
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getBooks()
+    }, [])
 
     const settings = {
         dots: false,
@@ -21,8 +49,11 @@ const Books = () => {
 
     };
 
+        slidesToShow: 4,
+        slidesToScroll: 1
 
 
+    };
 
     return (
         <div className="container">
@@ -34,15 +65,11 @@ const Books = () => {
 
                 <div className="books__anyBooks">
                     <Slider {...settings}>
-                        <div className="">
-                            <img src={sublte} alt=""/>
-                            <h1>THE SUBTLE ART OF <br/> NOT GIVING A F*CK</h1>
-                            <p>by Mark Manson</p>
-                        </div>
-                        <div className="">
-                            <img src={rules} alt=""/>
-                            <h1>8 RULES OF LOVE</h1>
-                            <p>by Jay Shetty</p>
+                    {books.map((item) => (
+                        <div key={item.id}>
+                            <img src={item.volumeInfo.imageLinks.thumbnail} alt=""/>
+                            <h2>{item.volumeInfo.title}</h2>
+                            <p>{item.volumeInfo.authors}</p>
                         </div>
                         <div className="">
                             <img src={glob} alt=""/>
@@ -64,6 +91,9 @@ const Books = () => {
                             <h1>IT ENDS WITH US</h1>
                             <p>by Colleen Hoover</p>
                         </div>
+                    ))}
+
+
                     </Slider>
                 </div>
             </div>

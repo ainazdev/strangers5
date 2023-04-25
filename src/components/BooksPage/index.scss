@@ -53,10 +53,13 @@
       font-weight: 400;
       font-size: 14px;
       color: #818EEA;
+      padding: 0 20px;
     }
 
     &--main {
       padding: 20px 0;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -105,5 +108,127 @@
       font-size: 16px;
       color: #19272E;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+  .booksPage__first {
+    padding: 38px 20px;
+  }
+  .booksPage__third--main {
+    padding: 20px 20px;
+  }
+  .booksPage__genres{
+    padding: 0 20px;
+  }
+  .booksPage__fourth {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .booksPage__first {
+    padding: 38px 30px;
+  }
+  .booksPage__third--main {
+    padding: 20px 30px;
+  }
+  .booksPage__genres {
+    padding: 0 30px;
+  }
+  .booksPage__fourth {
+    margin-left: 20px;
+  }
+  .booksPage__second button {
+    margin-right: 40px;
+  }
+  .booksPage__fifth {
+    padding: 0 10px 24px;
+  }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+  .booksPage__fifth {
+    padding: 5px 50px 24px;
+  }
+}
+@media (max-width: 450px) {
+  .booksPage__first {
+    padding: 38px 40px;
+  }
+  .booksPage__third--main {
+    padding: 20px 40px;
+  }
+  .booksPage__genres {
+    padding: 0 35px;
+  }
+  .booksPage__fourth {
+    margin-left: 25px;
+  }
+  .booksPage__second button {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 400px) {
+  .booksPage__fifth {
+    padding: 5px 140px 24px;
+  }
+  .booksPage__first h1 {
+    font-size: 60px;
+  }
+  .booksPage__first p {
+    font-size: 35px;
+  }
+  .booksPage__third h2 {
+    font-size: 35px;
+  }
+  .booksPage__third a {
+    font-size: 20px;
+  }
+  .booksPage__genres {
+    font-size: 25px;
+  }
+  .booksPage__fourth {
+    margin-left: 30px;
+  }
+  .booksPage__fourth h3 {
+    font-size: 25px;
+  }
+  .booksPage__third--main {
+    display: none;
+  }
+  .booksPage__genres {
+    display: none;
+  }
+  .booksPage__fourth {
+    display: none;
+  }
+  .booksPage__fifth {
+    padding: 0px -1px 25px;
+  }
+  .booksPage__first p {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+
+}
+@media (max-width: 320px) {
+  .booksPage__fifth {
+    padding: 5px 165px 30px;
+  }
+  .booksPage__first {
+    padding: 40px 146px;
   }
 }

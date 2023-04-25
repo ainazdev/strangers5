@@ -31,6 +31,12 @@ const Header = () => {
                     <div className="search-box">
                         <input className="search-txt" type="text" placeholder="Type to search"/>
                         <a className="search-btn" href="#"> <BsSearch className=""/></a>
+                    <div className="header--search">
+                        <BsSearch className="header--search__first"/>
+                        <NavLink to={"/DetailBooks"}>
+                        <RiShoppingBagLine className="header--search__bag"/>
+
+                        </NavLink>
                     </div>
 
                     <NavLink to={"/DetailBooks"}>

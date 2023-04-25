@@ -38,7 +38,7 @@ const NewBooks = () => {
                 </div>
 
             </div>
-            <NewBooks/>
+            {/*<NewBooks/>*/}
         </>
     );
 };

@@ -36,13 +36,7 @@
   }
 }
 
-// link button - 1 +
-.df {
-  display: flex;
-  text-align: center;
-  margin-top: 32px;
-  gap: 20px;
-}
+// link button -
 .linkcart {
   background: #818eea;
   border-radius: 8px;
@@ -63,6 +57,12 @@
     text-decoration: none;
   }
 }
+   .df {
+     display: flex;
+     text-align: center;
+     margin-top: 32px;
+     gap: 20px;
+   }
 
 .linkOne {
   display: flex;

@@ -11,6 +11,11 @@ import Books from "./components/Books";
 import NewBooks from "./components/HewBooks";
 import DetailPage from "./components/DetailPage";
 import DetailBooks from "./components/DetailBooks";
+import DetailPage from "./components/DetailPage";
+import DetailBooks from "./components/DetailBooks";
+import NewBooks from "./components/HewBooks";
+
+
 
 
 function App() {
@@ -18,15 +23,19 @@ function App() {
         <div className="App">
             <Header/>
             <Routes>
-                <Route path={"/bookShop"} element={<BookShop/>}/>
+                <Route path={"/BookShop"} element={<BookShop/>}/>
                 <Route path={"/genres"} element={<Genres/>}/>
                 <Route path={"/newbooks"} element={<NewBooks/>} />
+                <Route path={"/NewBooks"} element={<NewBooks/>} />
                 <Route path={"/books"} element={<Books/>}/>
                 <Route path={"/aboutUs"} element={<AboutUs/>}/>
+
                 <Route path={"/BooksPage"} element={<BooksPage/> } />
                 <Route path={"/detailPage"} element={<DetailPage/>}/>
                 <Route path={"/detailBooks"} element={<DetailBooks/>}/>
 
+                <Route path={"/DetailPage"} element={<DetailPage/>}/>
+                <Route path={"/DetailBooks"} element={<DetailBooks/>}/>
 
             </Routes>
             <Footer/>
@@ -35,3 +44,9 @@ function App() {
 }
 
 export default App;
+
+
+// аутсорсинговые компании плюсы и минусыб топ5
+// продуктовые
+// стартапы
+// ентерприсе

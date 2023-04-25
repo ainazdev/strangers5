@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './style.scss'
 import Slider from "react-slick"
+import sublte from '../../img/subtleBook.png'
+import rules from '../../img/rulesBook.png'
+import markey from '../../img/markeyBook.png'
+import hevver from '../../img/hovverBook.png'
+import harry from '../../img/harryBook.png'
+import glob from '../../img/globBook.png'
 // import sublte from '../../img/subtleBook.png'
 // import rules from '../../img/rulesBook.png'
 // import markey from '../../img/markeyBook.png'
@@ -37,6 +43,12 @@ const Books = () => {
         dots: false,
         infinite: true,
         speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1
+
+
+    };
+
         slidesToShow: 4,
         slidesToScroll: 1
 
@@ -58,6 +70,26 @@ const Books = () => {
                             <img src={item.volumeInfo.imageLinks.thumbnail} alt=""/>
                             <h2>{item.volumeInfo.title}</h2>
                             <p>{item.volumeInfo.authors}</p>
+                        </div>
+                        <div className="">
+                            <img src={glob} alt=""/>
+                            <h1>THE CREATIVE ACT</h1>
+                            <p>by Rick Rubin with Neil Strauss</p>
+                        </div>
+                        <div className="">
+                            <img src={markey} alt=""/>
+                            <h1>THE BOY, THE MOLE, <br/> THE FOX AND THE <br/> HORSE</h1>
+                            <p>by Charlie Mackesy</p>
+                        </div>
+                        <div className="">
+                            <img src={harry} alt=""/>
+                            <h1>HARRY POTTER</h1>
+                            <p>by J.K. Rowling</p>
+                        </div>
+                        <div className="">
+                            <img src={hevver} alt=""/>
+                            <h1>IT ENDS WITH US</h1>
+                            <p>by Colleen Hoover</p>
                         </div>
                     ))}
 

@@ -23,7 +23,6 @@ function App() {
         <div className="App">
             <Header/>
             <Routes>
-                <Route path={"/BookShop"} element={<BookShop/>}/>
                 <Route path={"/genres"} element={<Genres/>}/>
                 <Route path={"/newbooks"} element={<NewBooks/>} />
                 <Route path={"/NewBooks"} element={<NewBooks/>} />
